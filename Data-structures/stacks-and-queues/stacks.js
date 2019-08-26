@@ -10,6 +10,12 @@
 // 2. Undo/Redo things -> undo the "LAST" action
 // 3. Routing (History) is treated like a stack
 
+//BiG O notation of Stacks
+// Insertion - O(1)
+// Removal - O(1)
+// Searching - O(N)
+// Access - O(N)
+
 // Implement Stacks using Linked Lists
 class Node {
 	constructor(value) {
