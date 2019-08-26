@@ -181,7 +181,7 @@ class LinkedList
   # increment the length
   # return true
   def insert(index, val)
-    return nil if index.negative? || index >= length
+    return nil if index.negative? || index > length
 
     if index == self.length
       push(val)
@@ -208,7 +208,7 @@ class LinkedList
   # Then set the next property of the previous code to be the next of the next node
   # decrement the length
   def remove(index)
-    return nil if index.negative? || index >= length
+    return nil if index.negative? || index > length
     return shift if index.zero?
     return pop(index) if index == self.length - 1
 
@@ -218,6 +218,4 @@ class LinkedList
     self.length -= 1
     removed
   end
-
 end
-
